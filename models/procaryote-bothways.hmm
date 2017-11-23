@@ -1,0 +1,176 @@
+Procaryote, triplets (one way)
+
+//Noncoding state
+State 0, N:
+    -> 0, R0, BA1, BB1, BC1, R'0, R''0
+    emits: A,C,G,T
+
+//Coding states (left-to-right)
+State R0, C:
+    -> R1
+    emits: A
+
+State R1, C:
+    -> R2
+    emits: T
+
+State R2, C:
+    -> RL1
+    emits: G
+
+State R'0, C:
+    -> R'1
+    emits: T
+
+State R'1, C:
+    -> R'2
+    emits: T
+
+State R'2, C:
+    -> RL1
+    emits: G
+
+State R''0, C:
+    -> R''1
+    emits: G
+
+State R''1, C:
+    -> R''2
+    emits: T
+
+State R''2, C:
+    -> RL1
+    emits: G
+
+State RL1, C:
+    -> RL2
+    emits: A,C,G,T
+
+State RL2, C:
+    -> RL3
+    emits: A,C,G,T
+
+State RL3, C:
+    -> RL1, RA1, RB1, RC1
+    emits: A,C,G,T
+
+State RA1, C:
+    -> RA2
+    emits: T
+
+State RA2, C:
+    -> RA3
+    emits: A
+
+State RA3, C:
+    -> 0
+    emits: A
+
+State RB1, C:
+    -> RB2
+    emits: T
+
+State RB2, C:
+    -> RB3
+    emits: A
+
+State RB3, C:
+    -> 0
+    emits: G
+
+State RC1, C:
+    -> RC2
+    emits: T
+
+State RC2, C:
+    -> RC3
+    emits: G
+
+State RC3, C:
+    -> 0
+    emits: A
+
+//Coding states (right-to-left)
+State BA1, R:
+    -> BA2
+    emits: T
+
+State BA2, R:
+    -> BA3
+    emits: T
+
+State BA3, R:
+    -> BL1
+    emits: A
+
+State BB1, R:
+    -> BB2
+    emits: C
+
+State BB2, R:
+    -> BB3
+    emits: T
+
+State BB3, R:
+    -> BL1
+    emits: A
+
+State BC1, R:
+    -> BC2
+    emits: T
+
+State BC2, R:
+    -> BC3
+    emits: C
+
+State BC3, R:
+    -> BL1
+    emits: A
+
+State BL1, R:
+    -> BL2
+    emits: A,C,G,T
+
+State BL2, R:
+    -> BL3
+    emits: A,C,G,T
+
+State BL3, R:
+    -> BL1, B1, B'1, B''1
+    emits: A,C,G,T
+
+State B1, R:
+    -> B2
+    emits: C
+
+State B2, R:
+    -> B3
+    emits: A
+
+State B3, R:
+    -> 0
+    emits: T
+
+State B'1, R:
+    -> B'2
+    emits: C
+
+State B'2, R:
+    -> B'3
+    emits: A
+
+State B'3, R:
+    -> 0
+    emits: A
+
+State B''1, R:
+    -> B2
+    emits: C
+
+State B''2, R:
+    -> B''3
+    emits: A
+
+State B''3, R:
+    -> 0
+    emits: C

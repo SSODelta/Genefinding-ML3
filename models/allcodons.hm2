@@ -1,0 +1,16 @@
+Start:
+   ATG, N
+   ATC, N
+   ATA, R
+   GTG, N
+   ATT, N
+   CTG, N
+   GTT, N
+   CTC, N
+   TTA, N
+   TTG, N
+
+Stop:
+   TAG, N
+   TGA, N
+   TAA, N

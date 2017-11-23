@@ -1,0 +1,64 @@
+Procaryote, triplets (one way)
+State 1, N:
+    -> 1, 2
+    EMITS: A,C,G,T
+
+State 2, C:
+    -> 3
+    EMITS: A
+
+State 3, C:
+    -> 4
+    EMITS: T
+
+State 4, C:
+    -> 5
+    EMITS: G
+
+State 5, C:
+    -> 6
+    EMITS: A,C,G,T
+
+State 6, C:
+    -> 7
+    EMITS: A,C,G,T
+
+State 7, C:
+    -> 5, 8, 11, 14
+    EMITS: A,C,G,T
+
+State 8, C:
+    -> 9
+    EMITS: T
+
+State 9, C:
+    -> 10
+    EMITS: A
+
+State 10, C:
+    -> 1
+    EMITS: A
+
+State 11, C:
+    -> 12
+    EMITS: T
+
+State 12, C:
+    -> 13
+    EMITS: A
+
+State 13, C:
+    -> 1
+    EMITS: G
+
+State 14, C:
+    -> 15
+    EMITS: T
+
+State 15, C:
+    -> 16
+    EMITS: G
+
+State 16, C:
+    -> 1
+    EMITS: A
